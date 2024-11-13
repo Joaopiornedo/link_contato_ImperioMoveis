@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Evelins';
+    src: url('EvelinsRegular.woff2') format('woff2'),
+        url('EvelinsRegular.woff') format('woff'),
+        url('EvelinsRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    --c1: #FFFFFf;
+    --c2: #caa324;
+    --c3: #9b7d1b;
+    --c4: #050505;
+}
+
+body{
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+main{
+    background-image: linear-gradient(  rgba(255, 255, 255, 0.1), hsla(46, 70%, 36%, 0.1));
+    box-shadow: 0px 5px 30px #05050534;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 95%;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.b1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    color: var(--c1);
+    font-size: 20px;
+    font-family: 'Evelins';
+    font-weight: lighter; 
+}
+.b2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    min-width: 100%;
+}
+
+.ft{
+    width: 60%;
+    border-radius: 20px;
+    
+}
+h1{
+    text-align: center;
+    color: #caa324;
+}
+
+.btn{
+    background-color: white;
+    height: 2.5em;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 30px;
+    transition: 0.5s ;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(158, 199, 229, 0.500);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.icon-btn{
+    height: 40px;
+}
